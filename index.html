@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A retro kitsch cassette tape daily planner.">
+  <title>Task Tape Planner</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="header__nav" aria-label="Primary navigation">
+      <a class="header__brand" href="#" data-action="go-shelf" aria-label="Task Tape home">
+        <span class="header__brand-icon" aria-hidden="true">▣</span>
+        <span class="header__brand-text">Task Tape</span>
+      </a>
+      <button class="button button--secondary header__button" type="button" data-action="open-planner">Open Planner →</button>
+    </nav>
+  </header>
+
+  <main class="planner">
+    <section class="tape-shelf planner__view planner__view--active" id="shelf-view" aria-labelledby="shelf-title">
+      <div class="hero">
+        <p class="hero__eyebrow">YOUR WEEK, ON TAPE ♡</p>
+        <h1 class="hero__title" id="shelf-title">PLAY. PLAN. DONE.</h1>
+        <p class="hero__subtitle">Pick a day, flip the case, and press play on your plans.</p>
+      </div>
+
+      <div class="tape-shelf__frame">
+        <div class="tape-shelf__list" role="list" aria-label="Days of the week">
+          <button class="tape-shelf__item tape-shelf__item--monday" type="button" role="listitem" data-day="monday" aria-label="Open Monday tape">
+            <span class="tape-shelf__spine">
+              <span class="tape-shelf__doodle" aria-hidden="true">✿</span>
+              <span class="tape-shelf__label">monday focus</span>
+              <span class="tape-shelf__doodle tape-shelf__doodle--bottom" aria-hidden="true">✦</span>
+            </span>
+            <span class="tape-shelf__cover">
+              <span class="tape-shelf__cover-kicker">DAY 01</span>
+              <strong class="tape-shelf__cover-title">MONDAY<br>FOCUS</strong>
+              <span class="tape-shelf__cover-copy">fresh week<br>fresh start</span>
+              <span class="tape-shelf__cover-art" aria-hidden="true">☁︎ ✿ ✦</span>
+            </span>
+          </button>
+
+          <button class="tape-shelf__item tape-shelf__item--tuesday" type="button" role="listitem" data-day="tuesday" aria-label="Open Tuesday tape">
+            <span class="tape-shelf__spine">
+              <span class="tape-shelf__doodle" aria-hidden="true">♡</span>
+              <span class="tape-shelf__label">tuesday focus</span>
+              <span class="tape-shelf__doodle tape-shelf__doodle--bottom" aria-hidden="true">❀</span>
+            </span>
+            <span class="tape-shelf__cover">
+              <span class="tape-shelf__cover-kicker">DAY 02</span>
+              <strong class="tape-shelf__cover-title">TUESDAY<br>FOCUS</strong>
+              <span class="tape-shelf__cover-copy">take small steps<br>make steady progress</span>
+              <span class="tape-shelf__cover-art" aria-hidden="true">♡ ❀ ♡</span>
+            </span>
+          </button>
+
+          <button class="tape-shelf__item tape-shelf__item--wednesday" type="button" role="listitem" data-day="wednesday" aria-label="Open Wednesday tape">
+            <span class="tape-shelf__spine">
+              <span class="tape-shelf__doodle" aria-hidden="true">☀</span>
+              <span class="tape-shelf__label">wednesday focus</span>
+              <span class="tape-shelf__doodle tape-shelf__doodle--bottom" aria-hidden="true">✧</span>
+            </span>
+            <span class="tape-shelf__cover">
+              <span class="tape-shelf__cover-kicker">DAY 03</span>
+              <strong class="tape-shelf__cover-title">WEDNESDAY<br>FOCUS</strong>
+              <span class="tape-shelf__cover-copy">midweek glow<br>keep going</span>
+              <span class="tape-shelf__cover-art" aria-hidden="true">☀ ✿ ☀</span>
+            </span>
+          </button>
+
+          <button class="tape-shelf__item tape-shelf__item--thursday" type="button" role="listitem" data-day="thursday" aria-label="Open Thursday tape">
+            <span class="tape-shelf__spine">
+              <span class="tape-shelf__doodle" aria-hidden="true">☘</span>
+              <span class="tape-shelf__label">thursday focus</span>
+              <span class="tape-shelf__doodle tape-shelf__doodle--bottom" aria-hidden="true">✿</span>
+            </span>
+            <span class="tape-shelf__cover">
+              <span class="tape-shelf__cover-kicker">DAY 04</span>
+              <strong class="tape-shelf__cover-title">THURSDAY<br>FOCUS</strong>
+              <span class="tape-shelf__cover-copy">slow down<br>stay grounded</span>
+              <span class="tape-shelf__cover-art" aria-hidden="true">☘ ✿ ☘</span>
+            </span>
+          </button>
+
+          <button class="tape-shelf__item tape-shelf__item--friday" type="button" role="listitem" data-day="friday" aria-label="Open Friday tape">
+            <span class="tape-shelf__spine">
+              <span class="tape-shelf__doodle" aria-hidden="true">✦</span>
+              <span class="tape-shelf__label">friday focus</span>
+              <span class="tape-shelf__doodle tape-shelf__doodle--bottom" aria-hidden="true">☻</span>
+            </span>
+            <span class="tape-shelf__cover">
+              <span class="tape-shelf__cover-kicker">DAY 05</span>
+              <strong class="tape-shelf__cover-title">FRIDAY<br>FOCUS</strong>
+              <span class="tape-shelf__cover-copy">finish bright<br>weekend in sight</span>
+              <span class="tape-shelf__cover-art" aria-hidden="true">✦ ☻ ✦</span>
+            </span>
+          </button>
+
+          <button class="tape-shelf__item tape-shelf__item--saturday" type="button" role="listitem" data-day="saturday" aria-label="Open Saturday tape">
+            <span class="tape-shelf__spine">
+              <span class="tape-shelf__doodle" aria-hidden="true">★</span>
+              <span class="tape-shelf__label">saturday focus</span>
+              <span class="tape-shelf__doodle tape-shelf__doodle--bottom" aria-hidden="true">♡</span>
+            </span>
+            <span class="tape-shelf__cover">
+              <span class="tape-shelf__cover-kicker">DAY 06</span>
+              <strong class="tape-shelf__cover-title">SATURDAY<br>FOCUS</strong>
+              <span class="tape-shelf__cover-copy">make it fun<br>make it yours</span>
+              <span class="tape-shelf__cover-art" aria-hidden="true">★ ♡ ★</span>
+            </span>
+          </button>
+
+          <button class="tape-shelf__item tape-shelf__item--sunday" type="button" role="listitem" data-day="sunday" aria-label="Open Sunday tape">
+            <span class="tape-shelf__spine">
+              <span class="tape-shelf__doodle" aria-hidden="true">☁</span>
+              <span class="tape-shelf__label">sunday focus</span>
+              <span class="tape-shelf__doodle tape-shelf__doodle--bottom" aria-hidden="true">♡</span>
+            </span>
+            <span class="tape-shelf__cover">
+              <span class="tape-shelf__cover-kicker">DAY 07</span>
+              <strong class="tape-shelf__cover-title">SUNDAY<br>FOCUS</strong>
+              <span class="tape-shelf__cover-copy">soft reset<br>for tomorrow</span>
+              <span class="tape-shelf__cover-art" aria-hidden="true">☁ ♡ ☁</span>
+            </span>
+          </button>
+        </div>
+        <p class="tape-shelf__hint">Hover to flip a case · Click to open</p>
+      </div>
+    </section>
+
+    <section class="cassette-detail planner__view" id="detail-view" aria-labelledby="detail-title" hidden>
+      <div class="cassette-detail__glow" aria-hidden="true"></div>
+      <button class="cassette-detail__back" type="button" data-action="back-shelf">← Back to shelf</button>
+
+      <article class="cassette-detail__content">
+        <div class="cassette-detail__tape" aria-label="Selected day cassette placeholder">
+          <div class="cassette-detail__tape-top">
+            <span class="cassette-detail__number">002</span>
+            <span class="cassette-detail__day-code">DAY 02</span>
+            <strong class="cassette-detail__tape-name">TUESDAY</strong>
+            <span class="cassette-detail__side">A SIDE</span>
+          </div>
+          <div class="cassette-detail__window">
+            <span class="cassette-detail__window-art">✿ ✿ ✿ ♡ ✿ ✿</span>
+          </div>
+          <div class="cassette-detail__mechanism">
+            <span class="cassette-detail__reel" aria-hidden="true"></span>
+            <span class="cassette-detail__counter" aria-hidden="true">|||||||||</span>
+            <span class="cassette-detail__reel" aria-hidden="true"></span>
+          </div>
+          <div class="cassette-detail__holes" aria-hidden="true">● ●　● ●</div>
+        </div>
+
+        <h2 class="cassette-detail__title" id="detail-title">Tuesday</h2>
+        <div class="cassette-detail__actions">
+          <button class="button button--primary" type="button" data-action="open-tasks">Open Tuesday's Tasks →</button>
+          <button class="button button--text" type="button" data-action="back-shelf">← Back to shelf</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="task-board planner__view" id="board-view" aria-labelledby="board-title" hidden>
+      <div class="task-board__topbar">
+        <button class="task-board__back" type="button" data-action="back-detail">← Back</button>
+        <a class="task-board__brand" href="#" data-action="go-shelf">▣ <span>Task Tape</span></a>
+      </div>
+
+      <nav class="day-nav" aria-label="Choose day">
+        <button class="day-nav__item day-nav__item--monday" type="button" data-day="monday">Mon</button>
+        <button class="day-nav__item day-nav__item--tuesday day-nav__item--active" type="button" data-day="tuesday">Tue</button>
+        <button class="day-nav__item day-nav__item--wednesday" type="button" data-day="wednesday">Wed</button>
+        <button class="day-nav__item day-nav__item--thursday" type="button" data-day="thursday">Thu</button>
+        <button class="day-nav__item day-nav__item--friday" type="button" data-day="friday">Fri</button>
+        <button class="day-nav__item day-nav__item--saturday" type="button" data-day="saturday">Sat</button>
+        <button class="day-nav__item day-nav__item--sunday" type="button" data-day="sunday">Sun</button>
+      </nav>
+
+      <div class="task-board__layout">
+        <aside class="task-board__visual" aria-label="Selected day cassette art">
+          <div class="task-board__case">
+            <span class="task-board__case-title">TUESDAY<br>FOCUS</span>
+            <span class="task-board__case-copy">take small steps<br>make steady progress</span>
+            <span class="task-board__case-art" aria-hidden="true">♡ ✿ ♡</span>
+          </div>
+          <div class="task-board__mini-tape">
+            <span class="task-board__mini-label">TUESDAY</span>
+            <span class="task-board__mini-window" aria-hidden="true">◉ ━━━ ◉</span>
+          </div>
+        </aside>
+
+        <section class="task-board__content">
+          <header class="task-board__header">
+            <div>
+              <h2 class="task-board__title" id="board-title">Tuesday</h2>
+              <p class="task-board__summary"><span data-task-count>2</span> tasks · <span data-done-count>0</span> done</p>
+            </div>
+            <div class="task-board__completion" aria-label="Completion percentage">
+              <strong class="task-board__percentage" data-completion>0%</strong>
+              <span class="task-board__completion-label">COMPLETE</span>
+            </div>
+          </header>
+
+          <div class="task-board__progress" aria-hidden="true">
+            <span class="task-board__progress-bar" data-progress-bar></span>
+          </div>
+
+          <section class="kanban" aria-label="Task status board">
+            <section class="kanban__column kanban__column--todo">
+              <header class="kanban__header">
+                <span class="kanban__status-dot kanban__status-dot--todo" aria-hidden="true"></span>
+                <h3 class="kanban__title">TO DO</h3>
+                <span class="kanban__count" data-count="todo">1</span>
+              </header>
+              <div class="kanban__cards" data-column="todo">
+                <article class="task-card" data-task-id="api-spec">
+                  <button class="task-card__check" type="button" aria-label="Move Write API spec to in progress"></button>
+                  <div class="task-card__content">
+                    <h4 class="task-card__title">Write API spec</h4>
+                    <p class="task-card__time">30 min</p>
+                  </div>
+                </article>
+              </div>
+              <button class="kanban__add" type="button" data-action="add-task">＋ Add a task</button>
+            </section>
+
+            <section class="kanban__column kanban__column--progress">
+              <header class="kanban__header">
+                <span class="kanban__status-dot kanban__status-dot--progress" aria-hidden="true"></span>
+                <h3 class="kanban__title">IN PROGRESS</h3>
+                <span class="kanban__count" data-count="progress">1</span>
+              </header>
+              <div class="kanban__cards" data-column="progress">
+                <article class="task-card task-card--active" data-task-id="pull-requests">
+                  <button class="task-card__check" type="button" aria-label="Mark Review pull requests as done"></button>
+                  <div class="task-card__content">
+                    <h4 class="task-card__title">Review pull requests</h4>
+                    <p class="task-card__time">20 min · <span class="task-card__playing">● playing</span></p>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section class="kanban__column kanban__column--done">
+              <header class="kanban__header">
+                <span class="kanban__status-dot kanban__status-dot--done" aria-hidden="true"></span>
+                <h3 class="kanban__title">DONE</h3>
+                <span class="kanban__count" data-count="done">0</span>
+              </header>
+              <div class="kanban__cards kanban__cards--empty" data-column="done">
+                <p class="kanban__empty">Nothing finished yet</p>
+              </div>
+            </section>
+          </section>
+
+          <section class="daily-note" aria-labelledby="daily-note-title">
+            <div class="daily-note__content">
+              <h3 class="daily-note__title" id="daily-note-title">THOUGHTS OF THE DAY</h3>
+              <label class="daily-note__label" for="daily-note-input">Today's thought</label>
+              <textarea class="daily-note__input" id="daily-note-input" rows="4" placeholder="What made today feel like today..."></textarea>
+            </div>
+            <button class="daily-note__moment" type="button">
+              <span class="daily-note__moment-icon" aria-hidden="true">✎</span>
+              <span>Add a moment</span>
+            </button>
+          </section>
+        </section>
+      </div>
+
+      <aside class="focus-timer" aria-label="Focus timer">
+        <button class="focus-timer__close" type="button" aria-label="Hide focus timer">×</button>
+        <p class="focus-timer__label">● TAPE IN PROGRESS</p>
+        <h3 class="focus-timer__title">Review pull requests</h3>
+        <p class="focus-timer__time" data-timer>19:46</p>
+        <div class="focus-timer__controls">
+          <button class="focus-timer__skip" type="button" data-action="minus-five">≪<span>−5 min</span></button>
+          <button class="focus-timer__pause" type="button" data-action="toggle-timer" aria-label="Pause timer">Ⅱ</button>
+          <button class="focus-timer__skip" type="button" data-action="plus-five">≫<span>+5 min</span></button>
+        </div>
+        <p class="focus-timer__message">♡ Stay focused, you're doing great</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">Task Tape · little plans, one day at a time ✿</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
